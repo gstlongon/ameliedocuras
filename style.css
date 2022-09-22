@@ -494,7 +494,8 @@ nav.show div.icon-close {
 .cardapio-circle-first::before,
 .cardapio-circle-second::before,
 .cardapio-circle-third::before,
-.cardapio-circle-fourth::before {
+.cardapio-circle-fourth::before,
+.cardapio-circle-fifth::before {
     content: '';
     width: 60px;
     height: 60px;
@@ -604,6 +605,12 @@ nav.show div.icon-close {
 
 .cardapio-obs-wpp {
     color: rgb(255, 101, 126);
+    font-size: 12px;
+    width: 350px;
+}
+
+.cardapio-obs .home-icon {
+    width: 50px;
 }
 
 .cardapio-arte {
@@ -614,6 +621,7 @@ nav.show div.icon-close {
     position: absolute;
     opacity: 0.05;
     bottom: -20px;
+    z-index: -1;
 }
 
 
