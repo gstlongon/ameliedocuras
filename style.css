@@ -38,7 +38,7 @@ img {
   --subtitle-font-size: 1rem;
 
   --title-font: 'Gelasio', serif;
-  --body-font: 'Gelasio', serif;
+  --body-font:  'Ubuntu', sans-serif;
 }
 
 /*===  BASE ============================ */
@@ -68,7 +68,7 @@ body {
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .button:hover {
@@ -208,7 +208,7 @@ nav .menu {
 }
 
 .nav-social {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -217,14 +217,15 @@ nav .menu {
 
 .nav-icon {
     transition: .5s;
+    max-width: 50px;
 }
 
 .nav-icon:hover {
     transform: translateY(10px);
 }
 
-.icon-ifood {
-    width: 35px;
+.ifood-icon {
+    width: 40px;
 }
 
 nav .menu ul {
@@ -290,13 +291,13 @@ nav.show div.icon-close {
 }
 
 .home-swiper {
-    border: 2px solid var(--base-color);
     border-radius: 50%;
 }
 
 .home-swiper-img {
   border-radius: 50%;
   box-shadow: 2px 2px 2px #000;
+  display: flex;
   margin: 0 auto;
 }
 
@@ -347,6 +348,28 @@ nav.show div.icon-close {
 
 #home .text p {
   margin-bottom: 2rem;
+}
+
+.home-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 0px;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.home-icon {
+    padding: 5px;
+    transition: .5s;
+}
+
+.home-icon:hover {
+    transform: scale(150%);
+}
+
+#home .icon-ifood {
+    max-width: 50px;
 }
 
 /*====  ABOUT ============================ */
@@ -420,6 +443,14 @@ nav.show div.icon-close {
 }
 
 /*====  CARDAPIO ============================ */
+
+#cardapio {
+    position: relative;
+}
+
+#cardapio .title-cardapio {
+    margin-bottom: 40px;
+}
 
 #cardapio a {
     color: var(--base-color);
@@ -564,11 +595,24 @@ nav.show div.icon-close {
 }
 
 .cardapio-obs {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.cardapio-obs-wpp {
     color: rgb(255, 101, 126);
 }
 
 .cardapio-arte {
     display: none;
+}
+
+.cow-img {
+    position: absolute;
+    opacity: 0.05;
+    bottom: -20px;
 }
 
 
@@ -798,6 +842,10 @@ footer .social a:hover {
     display: none;
   }
 
+  .nav-social {
+    display: flex;
+  }
+
   /* layout */
   main {
     margin-top: var(--header-height);
@@ -828,6 +876,10 @@ footer .social a:hover {
     order: 0;
     max-width: 24rem;
     text-align: left;
+  }
+
+  .home-social {
+    display: none;
   }
 
   #home .swiper {

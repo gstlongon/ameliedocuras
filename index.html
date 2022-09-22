@@ -27,6 +27,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="header">
@@ -36,7 +39,7 @@
         </a>
         <div class="nav-social">
             <a target="_blank" href="https://www.ifood.com.br/delivery/marilia-sp/amelie-docuras-jardim-maria-izabel/04c28682-e1ad-4d7a-a261-fb359e52306f?utm_medium=share">
-                <img class="icon-ifood nav-icon" src="./assets/svg/icons-ifood.svg" alt="">
+                <img class="ifood-icon nav-icon" src="/assets/svg/icons-ifood.svg" alt="">
             </a>
             <a target="_blank" href="https://api.whatsapp.com/send?phone=5514991226468&text=">
                 <img class="nav-icon" src="./assets/svg/icon-whatsapp.svg" alt="">
@@ -47,7 +50,7 @@
             <a target="_blank" href="https://www.facebook.com/ameliedocuras">
                 <img class="nav-icon" src="./assets/svg/icon-facebook.svg" alt="">
             </a>
-            <a href="https://www.tiktok.com/@ameliedocuras">
+            <a target="_blank" href="https://www.tiktok.com/@ameliedocuras">
                 <img class="nav-icon" src="./assets/svg/icon-tiktok.svg" alt="">
             </a>
         </div>
@@ -79,20 +82,37 @@
                 A Amèlie nasceu a partir do amor por doces de qualidade.
                 Percebemos que quando combinamos dedicação, produtos de primeira e amor, conseguimos o melhor como resultado. E precisávamos de um nome para o melhor: Amèlie.
             </p>
-            <a class="button" href="#">Nosso Cardápio</a>
+            <a class="button" href="#cardapio">Nosso Cardápio</a>
+            <div class="home-social">
+                <a target="_blank" href="https://www.ifood.com.br/delivery/marilia-sp/amelie-docuras-jardim-maria-izabel/04c28682-e1ad-4d7a-a261-fb359e52306f?utm_medium=share">
+                    <img class="icon-ifood home-icon" src="./assets/svg/icons-ifood.svg" alt="">
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5514991226468&text=">
+                    <img class="home-icon" src="./assets/svg/icon-whatsapp.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/ameliedocuras/">
+                    <img class="home-icon" src="./assets/svg/iconsinstagram.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/ameliedocuras">
+                    <img class="home-icon" src="./assets/svg/icon-facebook.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.tiktok.com/@ameliedocuras">
+                    <img class="home-icon" src="./assets/svg/icon-tiktok.svg" alt="">
+                </a>
+            </div>
           </div>
             <div class="container swiper">
             <div class="testimonials home-swiper-container">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="home-swiper">
-                    <img class="home-swiper-img" src="./assets/img/foto1.png" alt="">
+                    <img class="home-swiper-img" src="./assets/img/foto2.png" alt="">
                     </div>
                 </div>
     
                 <div class="swiper-slide">
                     <div class="home-swiper">
-                    <img class="home-swiper-img" src="./assets/img/foto2.png" alt="">
+                    <img class="home-swiper-img" src="./assets/img/foto1.png" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -156,7 +176,7 @@
           </header>
           <div class="cards grid">
             <div class="card">
-                <img src="/assets/svg/icon-motorcycle.svg" alt="">
+                <img src="./assets/svg/icon-motorcycle.svg" alt="">
               <h3 class="title">Entrega Rápida</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -165,7 +185,7 @@
               </p>
             </div>
             <div class="card">
-                <img src="/assets/svg/icon-despertador.svg" alt="">
+                <img src="./assets/svg/icon-despertador.svg" alt="">
               <h3 class="title">Agilidade no atendimento</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -174,7 +194,7 @@
               </p>
             </div>
             <div class="card">
-                <img src="assets/svg/icon-card.svg" alt="">
+                <img src="./assets/svg/icon-card.svg" alt="">
               <h3 class="title">Aceitamos Cartões</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -411,7 +431,7 @@
                     <div class="cardapio-title-circle cardapio-circle-third">
                         <img class="cardapio-icon" src="./assets/svg/icon-brownie.svg" alt="">
                     </div>
-                    <p>Brownie Brownie Premium</p>
+                    <p>Brownie Premium</p>
                 </div>
                 <div class="cardapio-subtitle">
                     <p>Escolha sua massa:</p>
@@ -587,15 +607,22 @@
                     <p>Adicionais: 5</p>
                     <span>Brigadeiro Nobre, Creme de Morango, Creme de Ninho, Creme de
                         Ovomaltine, Diamante Negro, Doce de Leite, Galak, Geleia
-                        (frutas vermelhas ou morango), Laka Oreo e Nutella </span>
-                        <span class="cardapio-obs">OS VALORES DESTE CARDÁPIO SÃO VÁLIDOS
-                            APENAS PARA PEDIDOS VIA WHATSAPP</span>
+                        (frutas vermelhas ou morango), Laka Oreo e Nutella 
+                    </span>
                 </div>
-                <img src="./assets/svg/amelie-logocompleto.svg" alt="">
+                <div class="cardapio-obs">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5514991226468&text=">
+                        <img class="home-icon" src="./assets/svg/icon-whatsapp.svg" alt="">
+                    </a>
+                    <span class="cardapio-obs-wpp"> 
+                        OS VALORES DESTE CARDÁPIO SÃO VÁLIDOS APENAS PARA PEDIDOS VIA WHATSAPP
+                    </span>
+                </div>
+                <img  src="./assets/svg/amelie-logocompleto.svg" alt="">
             </div>
         </div>
+        <img class="cow-img" src="./assets/svg/cow.svg" alt="">
       </section>
-
       <div class="divider-1"></div>
       <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
