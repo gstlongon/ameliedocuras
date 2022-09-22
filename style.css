@@ -498,6 +498,7 @@ nav.show div.icon-close {
     content: '';
     width: 60px;
     height: 60px;
+    box-shadow: 2px 2px 3px #000;
     background-color: var(--body-color);
     position: absolute;
     border-radius: 50px;
